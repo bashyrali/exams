@@ -1,0 +1,72 @@
+-- CREATE TABLE categories(id serial PRIMARY KEY,
+-- 					    category VARCHAR(100) NOT NULL);
+
+-- CREATE TABLE brands(id serial PRIMARY KEY,
+-- 				  brand VARCHAR(100) NOT NULL);
+				  
+-- CREATE TABLE products(id serial PRIMARY KEY,
+-- 					 product VARCHAR(100) NOT NULL,
+-- 					  category_id INT,
+-- 					  brand_id INT,
+-- 					 FOREIGN KEY (category_id) REFERENCES categories (id),
+-- 					 FOREIGN KEY (brand_id) REFERENCES brands (id));
+					 
+-- CREATE TABLE stores(id serial PRIMARY KEY,
+-- 				  store VARCHAR(100));
+-- CREATE TABLE contragents(id serial PRIMARY KEY,
+-- 						contragent VARCHAR(100));
+-- CREATE TABLE actions(id serial PRIMARY KEY,
+-- 					action varchar(100));
+-- CREATE TABLE history(id serial PRIMARY KEY,
+-- 					 action_id INT NOT NULL,
+-- 					 FOREIGN KEY(action_id) REFERENCES actions(id),
+-- 					 action_date date,
+-- 					 qty INT,
+-- 					 product_id INT,
+-- 					 store_id INT ,
+-- 					 contragent_id INT,
+-- 					 FOREIGN KEY(product_id)REFERENCES products(id),
+-- 					 FOREIGN KEY(store_id) REFERENCES stores(id), 
+-- 					 FOREIGN KEY(contragent_id)REFERENCES contragents(id));
+-- INSERT INTO categories 
+-- VALUES
+-- (1,'vegetables'),
+-- (2,'fruits'),
+-- (3,'meat')
+-- INSERT INTO brands 
+-- VALUES
+-- (1,'jojo'),
+-- (2,'lolo'),
+-- (3,'hoho')
+-- INSERT INTO products
+-- VALUES
+-- (1,'tomato',1,1),
+-- (2,'cucumber',1,2),
+-- (3,'banana',2,2),
+-- (4,'apple',2,1),
+-- (5,'pear',2,3),
+-- (6,'chiсken',3,1),
+-- (7,'beef',3,3),
+-- (8,'mutton',3,3),
+-- (9,'potato',1,2)
+-- INSERT INTO stores
+-- VALUES(1,'Almaty'),
+-- (2,'Astana'),
+-- (3,'Pavlodar'),
+-- (4,'Semey')
+-- INSERT INTO actions
+-- values(1,'from store to store'),
+-- (2,'from store to contragent'),
+-- (3,'from contragent to store')
+
+-- INSERT INTO history 
+-- VALUES
+-- (1,1,'2021/09/25',4,1,1,null),
+-- (2,2,'2021/08/13',2,2,2,1),
+-- (3,3,'2021/05/18',1,3,3,2),
+-- (4,1,'2021/08/16',5,4,4,null),
+-- (5,2,'2021/09/16',2,5,1,3),
+-- (6,3,'2021/06/06',7,6,1,1),
+-- (7,1,'2021/01/01',8,7,2,null),
+-- (8,2,'2021/02/02',3,8,4,2),
+-- (9,3,'2021/03/03',4,9,3,3)

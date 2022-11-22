@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\Myskill.PC\\Downloads\\gson-2.8.7.jar"
+    ]
+}

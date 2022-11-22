@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Exam 1</title>
+</head>
+<body>
+    <nav class="header py-2">
+        <div class="container d-flex flex-column flex-md-row align-items-center">
+            <a href="#" class="link pr-md-4 my-2 my-md-0"><img src="img/logo.png" alt="logo"></a>
+            <a href="#" class="link px-md-4 my-2 my-md-0 text-decoration-none text-white">Employers </a>
+            <a href="#" class="link px-md-4 my-2 my-md-0 text-decoration-none text-white">Portfolio</a>
+            <a href="#" class="link px-md-4 my-2 my-md-0 text-decoration-none text-white">About us</a>
+            <a href="#" class="link px-md-4 my-2 my-md-0 text-decoration-none text-white mr-md-auto">Team</a>
+            <a href="#" type="button" class="button-logo btn btn-success text-white px-md-4 my-2 my-md-0" data-toggle="modal" data-target="#Modal">Login</a>
+            <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title title" id="ModalLabel">Sign Up</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="txt-green">Email address</label>
+                            <input type="email" class="form-control"  id="Email1" aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                          </div>
+                          <div class="form-group">
+                            <label for="Password1" class="txt-green">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                          </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="submit" class="btn btn-success">Enter</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </nav>
+    
+    <div id="MySlide" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#MySlide" data-slide-to="0" class="active"></li>
+            <li data-target="#MySlide" data-slide-to="1"></li>
+            <li data-target="#MySlide" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/slider-pic.jpg" class="d-block w-100" alt="slide-1">
+                <div class="carousel-caption ">
+                    <h5 class="title mb-md-5 d-none d-sm-block">Where will <span class="black-txt">great work</span> take you?</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/slider-pic.jpg" class="d-block w-100" alt="slide-1">
+                <div class="carousel-caption">
+                    <h5 class="title mb-md-5 d-none d-sm-block">Where will <span class="black-txt">great work</span> take you?</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/slider-pic.jpg" class="d-block w-100" alt="slide-1">
+                <div class="carousel-caption">
+                    <h5 class="title mb-md-5 d-none d-sm-block">Where will <span class="black-txt">great work</span> take you?</h5>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#MySlide" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon filter-green" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#MySlide" role="button" data-slide="next">
+            <span class="carousel-control-next-icon filter-green" aria-hidden="true"></span>
+        </a>
+    </div>
+    <div class="bg-gray">
+        <div class="container ">
+            <div class="d-flex flex-column align-items-center py-5">
+                <h5 class="title" ><span class="black-txt">We give</span> best Services</h5>
+                <p class="text-center txt-gray" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, autem maiores. Officiis itaque alias saepe dolore, quo ad facere ipsum expedita at. In, suscipit accusamus dolorum voluptatem cupiditate quisquam odit. In, fuga atque reprehenderit officia ullam assumenda aut quos tempora, odit possimus cum saepe recusandae at, numquam animi. Fuga ipsa voluptatem labore.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 text-center">
+                    <img src="img/ic-1.png" alt="icon" class="item-img">
+                    <h5 class="item-title">New way of vision</h5>
+                    <p class="txt-gray-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quidem sit explicabo doloribus voluptates eius ad dolor corporis sed fugit cupiditate in possimus, at deserunt velit provident nostrum suscipit iste.</p>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center">
+                    <img src="img/ic-2.png" alt="icon" class="item-img">
+                    <h5 class="item-title">Fresh Ideas</h5>
+                    <p class="txt-gray-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quis dolor fuga dolorem repudiandae laboriosam distinctio dicta tempore voluptate eius amet, sunt accusantium quaerat hic maiores assumenda aspernatur placeat architecto!</p>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center">
+                    <img src="img/ic-3.png" alt="" class="item-img"></img>
+                    <h5 class="item-title">Strong Foundations</h5>
+                    <p class="txt-gray-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, minus. Cupiditate, voluptas nemo! Quod, aperiam consequuntur. Dicta odio quisquam praesentium ipsa, reiciendis, ipsum soluta voluptates perspiciatis incidunt reprehenderit assumenda officiis.</p>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center"><img src="img/ic-4.png" alt="" class="item-img"></img>
+                    <h5 class="item-title">Great Support</h5>
+                    <p class="txt-gray-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et magnam nihil vero blanditiis illo assumenda, est natus numquam facilis ad cum voluptatibus sint quas voluptatem consequatur dolor. Iste, dolorem corporis?</p>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div class="bg-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/pic-big-1.png" alt="" class="big-pic w-75">
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                    <h5 class="main-title">Find <span class="txt-green">the perfect</span> match fast</h5>
+                    <p class="txt-gray-small">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur laboriosam, at error vel quas obcaecati iure molestias perferendis officiis vitae explicabo ut animi porro unde minima tempore fugiat laudantium maiores.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-gray py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex flex-column justify-content-center align-items-md-start align-items-center">
+                    <h5 class="main-title my-0 my-md-2">Great <span class="txt-green">work starts </span> with great talent</h5>
+                    <ul class="text-decoration-none txt-gray-small list-unstyled text-left">
+                        <li class="py-1"><img src="img/arrow.png" alt="arrow"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+                        <li class="py-1"><img src="img/arrow.png" alt="arrow"> Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                        <li class="py-1"><img src="img/arrow.png" alt="arrow"> Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                        <li class="py-1"><img src="img/arrow.png" alt="arrow"> Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                        <li class="py-1"><img src="img/arrow.png" alt="arrow"> Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <img src="img/pic-big-2.png" alt="big-pic" class="big-pic w-75">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-white">
+        <div class="container py-5">
+            <h5 class="main-title text-center py-3">Recent Work Done on <span class="txt-green">JOB BOARD</span></h5>
+            
+            <div class="row py-3">
+                <div class="col-sm-6 col-md-3 col-12">
+                    <div class="card" >
+                        <img src="img/pic-1.jpg" class="card-img-top" alt="pic1">
+                        <div class="card-body text-center p-0">
+                            <a href="#" class="btn butn-txt blue my-3">Graphics</a>
+                            <p class="card-txt">Round Icons Design</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-md-3 col-12">
+                    <div class="card" >
+                        <img src="img/pic-2.jpg" class="card-img-top" alt="pic2">
+                        <div class="card-body text-center p-0">
+                            <a href="#" class="btn butn-txt green my-3">Graphics</a>
+                            <p class="card-txt">Stationary Design</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-md-3 col-12">
+                    <div class="card" >
+                        <img src="img/pic-3.jpg" class="card-img-top" alt="pic3">
+                        <div class="card-body text-center p-0">
+                            <a href="#" class="btn butn-txt purple my-3">Graphics</a>
+                            <p class="card-txt">Logo Design</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-md-3 col-12">
+                    <div class="card" >
+                        <img src="img/pic-4.jpg" class="card-img-top" alt="pic4">
+                        <div class="card-body text-center p-0">
+                            <a href="#" class="btn butn-txt orange my-3">Graphics</a>
+                            <p class="card-txt">Branding</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row py-3">
+                
+                <div class="col-sm-6 col-md-3 col-12">
+                    <div class="card" >
+                        <img src="img/pic-5.jpg" class="card-img-top" alt="pic5">
+                        <div class="card-body text-center p-0">
+                            <a href="#" class="btn butn-txt green my-3">Graphics</a>
+                            <p class="card-txt">Visiting Card Design</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-md-3 col-12">
+                    <div class="card" >
+                        <img src="img/pic-6.jpg" class="card-img-top" alt="pic6">
+                        <div class="card-body text-center p-0">
+                            <a href="#" class="btn butn-txt orange my-3">Graphics</a>
+                            <p class="card-txt">Brochure Design</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-md-3 col-12">
+                    <div class="card" >
+                        <img src="img/pic-7.jpg" class="card-img-top" alt="pic7">
+                        <div class="card-body text-center p-0">
+                            <a href="#" class="btn butn-txt blue my-3">Graphics</a>
+                            <p class="card-txt">Branding</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-md-3 col-12">
+                    <div class="card" >
+                        <img src="img/pic-8.jpg" class="card-img-top" alt="pic8">
+                        <div class="card-body text-center p-0">
+                            <a href="#" class="btn butn-txt purple my-3">Graphics</a>
+                            <p class="card-txt">Stationary Design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer py-3">
+        <div class="container">
+            <p class="txt-footer my-0">© 2015 JOB BOARD Landing Page By Mike Taylor</p>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</html>
